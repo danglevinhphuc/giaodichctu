@@ -1,0 +1,10 @@
+<?php
+	define("DB_HOST","localhost");
+	define("DB_USER","root");
+	define("DB_PASSWORD","");
+	define("DATA","trao_doi");
+		/*define("DB_HOST","mysql.hostinger.vn");
+		define("DB_USER","u312463012_root");
+		define("DB_PASSWORD","500anhem");
+		define("DATA","u312463012_root");
+?>

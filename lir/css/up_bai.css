@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-family: 'Pangolin', cursive;
+}
+body{
+	background-color: #D3D3D3;
+	font-size: 18px;
+
+}
+h1{
+	color: #CCCCCC;
+	font-size: 35px;
+}
+/****** HEADER ******/
+header .navbar{
+	background-color: #6633FF;
+	border-radius: 0px;
+	z-index: 1000;
+}
+header .navbar a{
+	color: #fff;
+	font-weight: bold;
+}
+header .navbar-header button{
+	background-color: #BEBEBE;
+}
+header .navbar-header .icon-bar{
+	background-color: #fff;
+}
+header .nav>li>a:hover{
+	background-color: #D3D3D3;
+}/******END HEADER ******/
+
+/***** MAIN *****/
+main{
+	margin-top: -20px;
+	background-color: #fff;
+	border: 1px solid #D3D3D3;
+	padding-bottom: 10px;
+}
+main h1 span{
+	color: #FF9900;
+	font-size: 20px;
+	font-style: italic;
+}
+
+main #khung_hinh{
+	width: 100%;
+	border: 1px solid #33CCCC;
+	height: 340px;
+	overflow: hidden;
+}
+main .khung_load{
+	overflow: hidden;
+}
+main #khung_hinh .khung_load{
+	text-align: center;
+}
+main #output1, main #output3, main #output2, main #output4{
+	background-color: #eee;
+	border-radius: 50%;
+	transition:all 2s;
+	-moz-transition:all 2s;
+	-webkit-transition:all 2s;
+}
+main #output1:hover,main #output2:hover,main #output3:hover,main #output4:hover{
+	transform: scale(1.5);
+}
+main #quang_cao{
+	margin-top:100px;
+	margin-left: 70px;
+}
+main .btn_submit{
+		width: 100%;
+}
+main label{
+	font-weight: bold;
+}
+#check_form,#chon_sp,#chon_dc,#check_form_gia{
+	color: red;
+	display: none;
+}/***** END MAIN *****/
+/***** FOOTER *****/
+footer{
+	width: 100%;
+	height: auto;	
+}
+footer #footer_1{
+	border: 1px solid #eee;
+	background-color: #fff;
+	margin-top: 10px;
+
+}
+footer .about p{
+	text-align: left;
+	color: #9C9C9C;
+}
+footer #footer_1 .fa{
+	font-size: 30px;
+}
+footer #footer_1  .fa-facebook.fa{
+	color: #29487d;
+}
+footer #footer_1  .fa-google.fa{
+	color: #d14836;
+}
+footer #footer_1  .fa-skype.fa{
+	color: #2A5993;
+}
+footer .that_lac p{
+	text-align: left;
+}
+footer #footer_1 span{
+	padding-left: 10px;
+}
+footer #footer_2 {
+	background-color:#010;
+	color: #fff;
+}
+/*****END FOOTER *****/
+/*** @MEDIA ****/
+@media screen and (max-width:860px){
+	#quang_cao{
+		display: none;
+	}
+	main #khung_hinh{
+		height: auto;
+	}
+	main #khung_hinh .khung_load{
+		text-align: left;
+	}
+	main .btn_submit{
+		width: 100%;
+	}
+}
+@media screen and (max-width:460px){
+	#quang_cao{
+		display: none;
+	}
+	main #xem_hang figure{
+		width: auto;
+	}
+	main #xem_hang figure .info-picture p:nth-child(3){
+		margin-top: 0px;
+		float: left;
+	}
+	main #khung_hinh{
+		height: auto;
+	}
+	main #khung_hinh .khung_load{
+		text-align: center;
+	}
+	main .submit_form{
+		text-align: center;
+	}
+	main .btn_submit{
+		width: 100%;
+	}
+	
+}/***END @MEDIA ****/

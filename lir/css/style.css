@@ -1,0 +1,376 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-family: 'Pangolin', cursive;
+}
+body{
+	background-color: #D3D3D3;
+	font-size: 18px;
+}
+
+img{
+	border: none;
+}
+h1{
+	color: #4F4F4F;
+	font-size: 35px;
+	line-height: 25px;
+	font-weight: bold;
+	margin-top: -20px;
+}
+h2{
+	font-size: 35px;
+	color: #6633FF;
+}
+h3{
+	color: #0000FF;
+	font-size: 35px;
+	opacity: 0.5;
+}
+.h3{
+	margin-right: 5px;
+	-webkit-transform: rotateY(50deg); /* Safari */
+	transform: rotateY(50deg);
+	display: block;
+	float: right;
+
+}
+/****** HEADER ******/
+header .navbar{
+	background-color: #6633FF;
+	border-radius: 0px;
+	z-index: 1000;
+
+}
+header .navbar a{
+	color: #fff;
+	font-weight: bold;
+}
+header .navbar-header button{
+	background-color: #BEBEBE;
+}
+header .navbar-header .icon-bar{
+	background-color: #fff;
+}
+header .nav>li>a:hover{
+	background-color: #D3D3D3;
+	}/******END HEADER ******/
+
+	/***** MAIN *****/
+
+	main{
+		margin-top: -20px;
+		background-color: #fff;
+		border: 1px solid #D3D3D3;
+		transition:all 0.5s;
+		-webkit-transition: all 0.5s;
+	}
+	main section{
+		padding-left: 10px;
+	}
+
+	main .input-group{
+		margin-top: 15px;
+	}
+	main input::-webkit-input-placeholder {
+		font-size: 15px;
+		padding-left: 10px;
+		position: relative;
+		font-family: "Courier New", Courier, monospace;
+		color:#9d9d9d;
+	}
+	/**** speed_search ****/
+	main #speed_search h2{
+		display: none;
+	}/****End speed_search ****/
+	/**** DANH MUC ***/
+	main #danh_muc a{
+		font-size: 13px;
+		line-height: 60px;
+		text-decoration: none;
+	}
+	main #danh_muc a:hover,main #danh_muc #loai_sp{
+		color: #000000;
+	}
+	#chon_khu_vuc_ktx,#chon_loai_hang_can_xem{
+		margin-top: 20px;
+	}
+	.check{
+		color:red;
+		font-weight: bold;
+		display: none;
+		}/****END DANH MUC ***/
+
+		/***** XEM HANG *****/
+		main #xem_hang figure{
+			width: 640px;
+			display: block;
+			float: left;
+			padding-top: 20px;
+			border-bottom: 1px solid #D3D3D3;
+
+		}
+		main #xem_hang figure a{
+			text-decoration: none;
+		}
+		main #xem_hang figure img{
+			float: left;
+			padding-bottom: 20px;
+			width: 150px;
+			height: 150px;
+		}
+		main #xem_hang figure .info-picture{
+			padding-left: 160px;
+		}
+		main #xem_hang figure .info-picture p:nth-child(1){
+			color: #363636;
+			font-weight: bold;
+
+		}
+		main #xem_hang figure .info-picture p:nth-child(2) a{
+			font-weight: bold;
+			text-decoration: none;
+		}
+		main #xem_hang figure .info-picture p:nth-child(2) a:hover{
+			color: #FF6600;
+		}
+		main #xem_hang figure .info-picture p:nth-child(3){
+			color: #9C9C9C;
+			font-size: 11px;
+			margin-top:64px;
+			float: right;
+		}
+		main #xem_hang figure .info-picture span{
+			font-weight: bold;
+		}
+		main #xem_hang #quang_cao{
+			float: right;
+			top:80px;
+			padding-left: 90px;
+			
+			}
+		main  #quang_cao img{
+			width: 300px;
+			height: 400px;
+		}/*****END XEM HANG *****/
+		main #quen_mk{
+			display: none;
+			}
+			/**** TIN XEM NHIEU NHAT ****/
+			main #tin_xem_nhieu{
+				border-top: 1px  solid #046544;
+				border-radius: 0px 40px 0 40px;
+				display: block;
+				margin-top: -112px;
+				
+			}
+			main #tin_xem_nhieu img{
+				width: 150px;
+				height: 150px;
+			}
+			main  .khung_xem_nhieu{
+				display: block;
+				float: left;
+			}
+			main  .khung_xem_nhieu a{
+				display: inline-block;
+				margin-top: 20px;
+				margin-left: 10px;
+				opacity: 0.7;
+				transition:all 1s;
+			}
+			main  .khung_xem_nhieu a:hover{
+				opacity: 1;
+				text-decoration: none;
+			}
+			main  .khung_xem_nhieu img{
+				box-shadow: 3px 0px 25px #0000FF;
+				border-radius: 0px 20px 0 20px;
+				}/****End TIN XEM NHIEU NHAT ****/
+				/****** NUT SEARCH *******/
+				.search[type=text] {
+					width: 630px;
+					box-sizing: border-box;
+					border: 2px solid #ccc;
+					border-radius: 4px;
+					font-size: 16px;
+					background-color: white;
+					background-image: url('../../img/search.jpg');
+					background-position: 10px 10px; 
+					background-repeat: no-repeat;
+					padding: 12px 20px 12px 40px;
+				}/******End NUT SEARCH *******/
+
+				/**** END MAIN ***/
+
+				/**** CSS xử lý cho trang kiem tra danh cho nguoi dung ****/
+				.list_sp p{
+					font-weight: bold;
+					font-size: 15px;
+				}
+				.list-group a{
+					text-decoration: none;
+					}/****END CSS xử lý cho trang kiem tra danh cho nguoi dung *****/
+
+					/***** FOOTER *****/
+					footer{
+						width: 100%;
+						height: auto;
+						transition:all 0.5s;
+						-webkit-transition: all 0.5s;
+					}
+					footer #footer_1{
+						border: 1px solid #eee;
+						background-color: #fff;
+						margin-top: 10px;
+
+					}
+					footer .about p{
+						text-align: left;
+						color: #9C9C9C;
+					}
+					footer #footer_1 .fa{
+						font-size: 30px;
+					}
+					footer #footer_1  .fa-facebook.fa{
+						color: #29487d;
+					}
+					footer #footer_1  .fa-google.fa{
+						color: #d14836;
+					}
+					footer #footer_1  .fa-skype.fa{
+						color: #2A5993;
+					}
+					footer .that_lac p{
+						text-align: left;
+					}
+					footer #footer_1 span{
+						padding-left: 10px;
+					}
+					footer #footer_2 {
+						background-color:#010;
+						color: #fff;
+					}
+					/*****END FOOTER *****/
+					/* CSS FORM ĐĂNG KÝ VÀ ĐĂNG NHẬP**/
+					form #username{
+						width: 174px;
+					}
+					form .username,form #ma_bao_ve,form #ma_bao_ve_qmk{
+						width: 202px;
+						margin-left: 55px;
+					}
+					form .password {
+						width: 202px;
+						margin-left: 60px;
+					}	
+					form .email{
+						width: 200px;
+						margin-left: 91px;
+					}
+					form .pass_again{
+						width:201px;
+					}
+					form .buton_dangky{
+						width: 300px;
+						height: 50px;
+						margin-top: 20px;
+					}
+					form .new_password{
+						width: 202px;
+						margin-left: 30px;
+					}
+					#result{
+						display: inline-block;
+					}
+					.pipe_yeu,.pipe_trungbinh,.pipe_manh,.check_tick,.check_cancel{
+						display: none;
+						font-weight: bold;
+					}
+					.pipe_yeu{
+						color: red;
+					}
+					.pipe_trungbinh{
+						color: yellow;
+					}
+					.pipe_manh{
+						color: green;
+					}
+					.check_kytu,.check_so,.check_chu,.tick_user_kytu,.tick_user_so,.tick_user_chu{
+						opacity: 0.3;
+						}/**  END FORM ĐĂNG KÝ VÀ ĐĂNG NHẬP **/
+						/*** @MEDIA ****/
+						@media screen and (max-width:860px){
+							#quang_cao{
+								display: none;
+							}
+							main #tin_xem_nhieu{
+								display: none;
+								
+							}
+							.search[type=text] {
+								width: 600px;
+							}
+						}
+						@media screen and (max-width:600px){
+							
+							body{
+								width: auto;
+							}
+							main figure .ngay_dang{
+								float: left;
+								overflow: hidden;
+								display: block;
+								margin-right: 120px;
+							}
+							.search[type=text] {
+								width: 400px;
+							}
+							
+						}
+
+						@media screen and (max-width:460px){
+							
+							main #xem_hang figure{
+								width: auto;
+							}
+							main #xem_hang figure .info-picture p:nth-child(3){
+								margin-top: 0px;
+
+							}
+							main figure .ngay_dang{
+								float: left;
+								margin-right: 0px;
+							}
+							form .username,form #username,form .user{
+								border-bottom: 1px solid #ddd;
+								margin-right: 0px;
+							}
+							form .password ,form .username,form #ma_bao_ve,form #ma_bao_ve_qmk{
+								width: 170px;
+								margin-left: 0px;
+							}
+							form .email{
+								width: 205px;
+								margin-left: 0px;
+							}
+							form .pass_again{
+								width:118px;
+								margin-left: -5px;
+							}
+							form .buton_dangky{
+								width: 290px;
+								height: 50px;
+								margin-top: 10px;
+							}
+							form .new_password{
+								width: 142px;
+								margin-left: 0px;
+							}
+							.search[type=text] {
+								width: auto;
+							}
+							
+}/***END @MEDIA ****/
